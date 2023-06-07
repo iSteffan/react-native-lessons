@@ -52,11 +52,6 @@ const styles = StyleSheet.create({
     width: '100%',
   },
 
-  image: {
-    flex: 1,
-    justifyContent: 'flex-end',
-  },
-
   container: {
     height: '61%',
     width: '100%',
@@ -64,6 +59,19 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 25,
     borderTopRightRadius: 25,
     backgroundColor: '#fff',
+  },
+
+  wrapper: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 4,
+  },
+
+  image: {
+    flex: 1,
+    justifyContent: 'flex-end',
   },
 
   title: {
@@ -75,14 +83,6 @@ const styles = StyleSheet.create({
     lineHeight: 35,
     textAlign: 'center',
     color: '#212121',
-  },
-
-  form: {
-    justifyContent: 'flex-start',
-
-    backgroundColor: 'transparent',
-    paddingHorizontal: 16,
-    width: '100%',
   },
 
   input: {
@@ -101,6 +101,16 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#E8E8E8',
     borderRadius: 8,
+  },
+
+  form: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    gap: 16,
+    backgroundColor: 'transparent',
+    paddingHorizontal: 16,
+    width: '100%',
   },
 
   passwordContainer: {
@@ -128,14 +138,6 @@ const styles = StyleSheet.create({
     lineHeight: 19,
     textAlign: 'center',
     color: '#fff',
-  },
-
-  wrapper: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 4,
   },
 
   loginText: {
