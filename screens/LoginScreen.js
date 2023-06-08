@@ -11,7 +11,7 @@ import {
 
 import { useState } from 'react';
 
-export const LoginScreen = ({ navigation }) => {
+export const LoginScreen = () => {
   const [focused, setFocused] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -152,8 +152,10 @@ const styles = StyleSheet.create({
   },
 
   form: {
+    display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'flex-start',
-
+    gap: 16,
     backgroundColor: 'transparent',
     paddingHorizontal: 16,
     width: '100%',
@@ -179,7 +181,6 @@ const styles = StyleSheet.create({
 
   passwordContainer: {
     position: 'relative',
-    marginTop: 16,
     marginBottom: 43,
   },
 
@@ -217,14 +218,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#fff',
   },
-
-  //   loginBtn: {
-  //     marginLeft: 'auto',
-  //     marginRight: 'auto',
-
-  //     width: 188,
-  //     height: 19,
-  //   },
 
   wrapper: {
     display: 'flex',
