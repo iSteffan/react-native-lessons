@@ -29,6 +29,8 @@ export default function App() {
   );
 }
 
+<script src="http://192.168.0.105:8097"></script>;
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
